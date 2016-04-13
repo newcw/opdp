@@ -9,6 +9,12 @@
 
 #####安装
 
+    git clone https://github.com/newcw/opd.git
+    cd opd
+
+    
+
 ######安装php + nginx
     
+    ./install.sh project-name server-port
 

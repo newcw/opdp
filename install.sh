@@ -10,6 +10,7 @@ if [ -z $project ] || [ -z $portIndex ];then
 fi 
 
 workPath=/data/work
+opbinPath=${workPath}"/opbin"
 srcPath=/data/work/opbin/make/soft
 nginxPort=$((8200+$2))
 phpPort=$((9200+$2))
@@ -23,6 +24,16 @@ fi
 
 #创建项目目录
 mkdir -p $workPath/$project
+
+#删除opbin
+if [ -d $opbinPath ];then
+    echo "opbin path '$opbinPath' has exsit!"
+    rm -rf $opbinPath
+fi
+
+#创建opbin并复制move
+mkdir $opbinPath
+cp -r ./move $opbinPath
 
 #编译安装nginx
 #解压nginx
