@@ -9,8 +9,9 @@
 
 #####安装
 
-    git clone https://github.com/newcw/opd.git
-    cd opd
+    git clone https://github.com/newcw/opdp.git
+    cd opdp
+    chmod -R u+x *
 
     
 

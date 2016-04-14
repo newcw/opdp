@@ -33,7 +33,7 @@ fi
 
 #创建opbin并复制move
 mkdir $opbinPath
-cp -r ./move $opbinPath
+cp -r ./make $opbinPath
 
 #编译安装nginx
 #解压nginx
